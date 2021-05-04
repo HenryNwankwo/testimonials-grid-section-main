@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+/* custom properties */
+
+:root{
+    
+    --mobile_screen: 375px;
+    --desktop_screen: 1440px;
+    --pri_moderate_violet: hsl(263, 55%, 52%);
+    --pri_dark_grayish_blue: hsl(217, 19%, 35%);
+    --pri_dark_blackish_blue: hsl(219, 29%, 14%);
+    --pri_white: hsl(0, 0%, 100%);
+    --neutral_light_gray: hsl(0, 0%, 81%);
+    --neutral_light_grayish_blue: hsl(210, 46%, 95%);
+    --font_size: 13px;
+    --weight_medium: 500;
+    --weight_semi_bold: 600;
+
+}
+
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: var(--font_size);
+    font-weight: var(--weight_medium);
+}
