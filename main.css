@@ -91,6 +91,19 @@ article h3 + p{
 article:first-child{
 
     background: var(--pri_moderate_violet);
+    position: relative;
+    z-index: 1;
+    
+    
+}
+
+article:first-child::before {
+
+    content: url(images/bg-pattern-quotation.svg);
+    position: absolute;    
+    top: 0;
+    right: 1.5rem;
+    z-index: -1;
     
     
 }
@@ -98,6 +111,7 @@ article:first-child{
 article:first-child h2{
     
     color: var(--pri_white);
+    
 }
 
 article:first-child h3,
