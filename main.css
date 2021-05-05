@@ -18,6 +18,7 @@
 
 }
 
+/* styles */
 
 *, *::after, *::before{
     margin: 0;
@@ -30,4 +31,128 @@ body{
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: var(--font_size);
     font-weight: var(--weight_medium);
+    background: var(--neutral_light_grayish_blue);
+    padding: 3rem 1rem;
+    max-width: 100%;
+    height: auto;
+}
+main{
+
+    width: 100%;
+    padding: 0 0.5em;
+}
+
+article{
+
+    width: 100%;
+    height:fit-content;
+    padding: 2em;
+    margin: 1.5em 0;
+    border-radius: 0.5rem;
+    box-shadow: 2px 3px 20px -10px var(--pri_dark_grayish_blue);
+}
+
+img{
+
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+img + div{
+
+    margin-left: 1.5em;
+}
+article>h2{
+
+    padding: 1em 0;
+    font-weight: var(--weight_semi_bold);
+    font-size: 1.3rem;
+    
+}
+
+article>p {
+    padding-top: 0.1em;
+    line-height: 1.5em;
+    opacity: 0.7;
+}
+
+.respondent_info{
+
+    display: flex;
+    align-items: center;
+}
+
+article h3 + p{
+
+    opacity: 0.5;
+
+}
+
+article:first-child{
+
+    background: var(--pri_moderate_violet);
+    
+    
+}
+
+article:first-child h2{
+    
+    color: var(--pri_white);
+}
+
+article:first-child h3,
+article:first-child h3 + p,
+article:first-child div ~ p {
+
+    color: var(--pri_white);
+}
+
+article:nth-child(2) {
+
+    background: var(--pri_dark_grayish_blue);
+    color: var(--neutral_light_grayish_blue);
+}
+
+article:nth-child(2) h3,
+article:nth-child(2) h3+p,
+article:nth-child(2) div~p {
+
+    color: var(--neutral_light_grayish_blue);
+}
+
+article:nth-child(3) {
+
+    background: var(--pri_white);
+    color: var(--pri_dark_grayish_blue);
+    
+}
+
+
+article:nth-child(4) {
+
+    background: var(--pri_dark_blackish_blue);
+    color: var(--neutral_light_grayish_blue);
+    
+}
+
+article:nth-child(4) h3,
+article:nth-child(4) h3+p,
+article:nth-child(4) div~p {
+
+    color: var(--neutral_light_gray);
+}
+
+
+article:last-child {
+
+    background: var(--pri_white);
+    color: var(--pri_dark_grayish_blue);
+}
+
+article:first-child p,
+article:nth-child(2) p,
+article:nth-child(4) p {
+
+    color: var(--neutral_light_gray);
+
 }
