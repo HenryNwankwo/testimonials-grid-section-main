@@ -175,7 +175,7 @@ article:nth-child(4) p {
 
 /* medium_screen and large_screen */
 
-@media all and (min-width: 376px) and (max-width: 1440px) {
+@media all and (min-width: 376px){
     
     body{
 
